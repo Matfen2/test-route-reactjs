@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+header {
+  display: flex;
+  padding: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .img-fluid {
+  height: 90px;
+  max-width: 300px;
+}
+header .navbar-nav {
+  display: flex;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
+  flex-direction: row;
+  list-style-type: none;
+}
+header .navbar-nav .nav-item .nav-link {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2ms ease;
+}
+header .navbar-nav .nav-item .nav-link:hover {
+  font-weight: bold;
+  transform: scale(1.2);
+}
+
+.list {
+  display: flex;
+  margin: 90px auto;
+  width: 100%;
+  max-width: 900px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  flex-direction: row;
+  justify-content: center;
+}
+.list .col-lg-4 .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.list .col-lg-4 .card .card-body .img-fluid {
+  height: 350px;
+  max-width: 380px;
+  border-radius: 30px;
+}
+.list .col-lg-4 .card .card-body #btnBuy {
+  font-size: 1.5em;
+  margin: 10px auto;
+  background-color: rgb(196, 50, 17);
+}
+.list .col-lg-4 .card .card-body #btnBuy .hrefBuy {
+  color: black;
+  text-decoration: none;
+}
+
+.show {
+  top: 52%;
+  left: 50%;
+  height: 400px;
+  overflow: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.show ul {
+  margin: 10px auto;
+}
+.show ul .info {
+  display: flex;
+  flex-direction: row;
+}
+.show ul .info li {
+  font-size: 1.4em;
+}
+.show ul .info #btnDelete {
+  margin-left: 10px;
+  margin-top: -3px;
+}
+.show form {
+  margin: 20px auto;
+}
+.show form input {
+  font-size: 1.4em;
+  max-width: 200px;
+}
+.show form #btnAdd {
+  font-size: 1.4em;
+}
+
+footer {
+  left: 50%;
+  bottom: -2%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+footer .copy {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
